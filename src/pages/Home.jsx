@@ -223,7 +223,7 @@ const Home = () => {
                             <span onClick={() => setShowModal(true)} className="text-white absolute left-3 w-6 h-6 bg-orange-600 rounded-full flex items-center justify-center cursor-pointer">
                                 <FaPlay />
                             </span>
-                            <small className="text-white absolute w-16 top-1/2 left-12 font-bold text-xs sm:text-sm">Our Video!</small>
+                            <small className="text-white absolute w-20 top-[35%] left-12 font-bold text-xs sm:text-sm">Our Video!</small>
                         </div>
                     </div>
                     {showModal && <VideoModal onClose={() => setShowModal(false)} />}
