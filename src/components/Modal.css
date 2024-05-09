@@ -1,0 +1,7 @@
+.modal__content {
+    width: 600px;
+    height: 400px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}

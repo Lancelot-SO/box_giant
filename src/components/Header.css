@@ -1,0 +1,233 @@
+nav {
+    width: 100%;
+    height: 180px;
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    border-bottom: rgba(56, 52, 52, 0.59);
+    box-shadow: -1px 7px 7px -5px rgba(56, 52, 52, 0.59);
+    -webkit-box-shadow: -1px 7px 7px -5px rgba(56, 52, 52, 0.59);
+    -moz-box-shadow: -1px 7px 7px -5px rgba(56, 52, 52, 0.59);
+    z-index: 10;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main__navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.right__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 700px;
+}
+
+.phone__calc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone__calc strong {
+    color: #ece9e9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    font-weight: 500;
+    background-color: #fff;
+    padding: 15px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price:hover {
+    background-color: #ff5810;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lists {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+.list__items {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+/* .list__item {
+    cursor: pointer;
+} */
+
+.list__items>.list__item:hover {
+    position: relative;
+}
+
+.list__items>.list__item:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff5810;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.list__item:hover {
+    color: #ff5810;
+}
+
+.sign__btns {
+    width: 250px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    border-left: 1px solid #000;
+}
+
+.log__in {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.log__in:hover {
+    cursor: pointer;
+    color: #d97706;
+}
+
+.sign__in {
+    display: flex;
+    background-color: #fff;
+    color: #ff5810;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sign__in:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff5810;
+}
+
+.bars {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    nav {
+        padding: 10px 0;
+        /* width: 100%; */
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .main__navbar {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .right__items {
+        display: none;
+    }
+
+    .bars {
+        display: flex;
+        color: #ff5810;
+        padding-right: 10px;
+        z-index: 999;
+        margin-left: 100px;
+    }
+
+    .nav__links {
+        position: fixed;
+        top: 140px;
+        left: 0;
+        -webkit-transition: height 2s;
+        width: 100vw;
+        height: 450px;
+        background: #fff;
+        color: #ff5810;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 40px;
+        display: flex;
+        overflow-y: auto;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    }
+
+
+    .mobile-nav-links {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .mobile-menu-link {
+        padding-bottom: 50px;
+    }
+
+    .nav-mobile__signup {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .nav__login-mobile {
+        padding-bottom: 40px;
+    }
+
+    .nav__signup-mobile {
+        color: #ff5810;
+    }
+
+}

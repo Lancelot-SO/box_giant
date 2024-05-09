@@ -1,0 +1,60 @@
+.air__left {
+    flex: 1;
+}
+
+.air__right {
+    flex: 2;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+    }
+
+    to {
+        max-height: 100px;
+        /* Adjust height as needed */
+    }
+}
+
+.hidden-text {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.hidden-text.visible {
+    animation: fadeIn 0.5s ease forwards, slideDown 0.5s ease forwards;
+}
+
+.toggle-btn {
+    color: #000;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.toggle-btn.plus:before {
+    content: '+';
+}
+
+.toggle-btn.minus:before {
+    content: '-';
+}
+
+/* Add animation for button content change */
+.toggle-btn:before {
+    animation: fadeIn 0.3s ease forwards;
+}
