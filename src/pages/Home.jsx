@@ -243,7 +243,7 @@ const Home = () => {
                 <section className="w-full h-full lg:px-[190px] 2xl:px-[190px] py-20">
                     <div className="express">
                         <div className="express__left">
-                            <h1 className="lg:w-30 bg-red-600 w-[320px] text-2xl font-bold flex pb-4 lg:text-5xl md:text-3xl">Safe, Reliable And Express deliveries from the USA and China that Saves you time and money!</h1>
+                            <h1 className="lg:w-full w-[320px] text-2xl font-bold flex pb-4 lg:text-5xl md:text-3xl">Safe, Reliable And Express deliveries from the USA and China that Saves you time and money!</h1>
                             <div className="express__middle">
                                 <div className="main__slider">
                                     <div className="slider">
@@ -268,7 +268,8 @@ const Home = () => {
                                 </div>
                                 <div className="middle__content">
                                     <p className="text-lg w-90 text-black pr-4">Save up to 80% in shipping cost by repacking and consolidating your merchandise with no hidden and shock fees and experience exemplary customer service via our user friendly and intuitive website. </p>
-                                    <p className="text-md w-100 mt-10 text-gray-500">We pride ourselves on providing the best transport and shipping services available all over the world. Our skilled personnel, utilising the latest communications, tracking and processing software, combined with decades of experience! Through integrated supply chain solutions, BoxGiant drives sustainable competitive advantages to some of the largest companies.</p>
+                                    <p className="text-md w-100 mt-10 text-gray-500">We pride ourselves on providing the best transport and shipping services available all over the world. Our skilled personnel, utilising the latest communications, tracking and processing software,
+                                        combined with decades of experience! Through integrated supply chain solutions, BoxGiant drives sustainable competitive advantages to some of the largest companies.</p>
                                 </div>
                             </div>
                         </div>
